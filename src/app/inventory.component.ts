@@ -11,4 +11,10 @@ import {Input} from '@angular/core';
 export class InventoryComponent  { 
 	
 	@Input() public inventory: Inventory;
+	
+	
+	onItemClicked(p_item:Item):void
+	{
+		console.log(p_item.name);
+	}
 }
