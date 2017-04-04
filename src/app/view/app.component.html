@@ -1,0 +1,15 @@
+<div *ngFor="let character of characters">
+	
+	<h1 class="idcard">ID Card</h1>
+	<p>Name		: {{character.name}}</p>
+	<p>Job		: {{character.job}}</p>
+	<p>Age		: {{character.age}}</p>
+	<p>Is Jedi	: {{character.isLight}}</p>
+
+	 <input [(ngModel)]="character.name" placeholder="name"/>
+
+	<my-inventory [inventory]="character.inventory"></my-inventory>
+
+</div>
+
+

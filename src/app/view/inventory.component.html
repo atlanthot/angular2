@@ -1,0 +1,10 @@
+<div *ngIf="inventory">
+	
+	<h2>Inventory</h2>
+	<ul>
+		<li *ngFor="let myitem of inventory.items">
+			{{myitem.name}} - {{myitem.price}}
+		</li>
+	</ul>
+	
+</div>
