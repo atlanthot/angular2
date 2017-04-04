@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+		<script type="text/javascript">
+		
+			// une fonction qui fait un traitement puis appelle une fonction de callbac une fois le traitement terminé
+			function processThenCallback( p_callback )
+			{
+			
+				// mon traitement ici ... 
+				p_callback();
+				
+			}
+			
+		
+			var toto = new Object();
+			toto.sayMyName = function(msg1, msg2)
+			{
+				console.log(msg1, msg2);
+				console.log("I am toto ");
+				console.log(this);
+			};
+			
+			
+			toto.sayMyName();
+			
+			processThenCallback( toto.sayMyName.bind(toto, "coucou", "c'est nous") );
+		
+		
+		</script>
+</head>
+<body>
+
+</body>
+</html>
