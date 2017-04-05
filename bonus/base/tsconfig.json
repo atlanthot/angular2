@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+		"baseUrl": "./ts/",
+        "outDir": "./js/",
+        "allowJs": true,
+        "target": "es5",
+		"noEmitOnError": true,
+		"experimentalDecorators": true,
+		  "emitDecoratorMetadata": true,
+		"sourceMap": true
+    },
+    "include": [
+        "./ts/**/*"
+    ]
+}

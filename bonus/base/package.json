@@ -1,0 +1,16 @@
+{
+  "name": "typescript_basics",
+  "version": "1.0.0",
+  "description": "permet d'apprendre les bases de typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nico",
+  "license": "ISC",
+  "devDependencies": {
+    "reflect-metadata": "^0.1.10",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2"
+  }
+}
