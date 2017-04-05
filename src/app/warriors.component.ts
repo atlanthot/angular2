@@ -3,13 +3,16 @@ import { Warrior } 		from "./warrior";
 import {WarriorService} from "./warrior.service";
 import {OnInit}			from "@angular/core";
 
+
+
+
 @Component({
-	selector: 'my-app',
-	templateUrl: "./view/app.component.html",
+	selector: 'my-warriors',
+	templateUrl: "./view/warriors.component.html",
 })
 
 
-export class AppComponent implements OnInit { 
+export class WarriorsComponent implements OnInit { 
 	
 	public characters:Warrior[];
 	private _service:WarriorService;

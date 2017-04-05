@@ -1,0 +1,18 @@
+
+<button (click)="goBack()">Back</button>
+
+<div *ngIf="character">
+	
+
+	<h1>Detail of {{character.name | uppercase}}</h1>
+
+	<p>Name		: {{character.name}}</p>
+	<p>Job		: {{character.job}}</p>
+	<p>Age		: {{character.age}}</p>
+	<p>Is Jedi	: {{character.isLight}}</p>
+
+	<my-inventory [inventory]="character.inventory"></my-inventory>
+
+	<button (click)="goToNextWarrior()">Next</button>
+
+</div>
